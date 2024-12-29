@@ -1,0 +1,201 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(151, 109, 30);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    flex: 1; 
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    margin: 1rem;
+    padding: 1rem;
+    color: black;
+    background-color: black;
+    text-align: center;
+    overflow: hidden; 
+    transition: max-height 0.3s ease; 
+    max-height: 300px;
+}
+
+.recipe-card h2 {
+    background-color: rgba(255,255,255, 0.5);
+    font-weight: 700;
+}
+
+.recipe-card p {
+    background-color: rgba(255,255,255, 0.5);
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        flex: 1 1 calc(45% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        flex: 1 1 100%;
+    }
+} 
+
+#recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background: black;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    width: 200px; 
+    text-wrap:wrap;
+    text-align: center;    
+    overflow: hidden;
+    max-height: 300px; 
+    cursor: pointer;  
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: black;
+    font-weight: 900;
+    background-color: rgba(255,255,255, 0.3);
+}
+.card p {
+    margin: 5px 0;
+    color: black;
+    font-weight:900;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.recipe-detail-container {
+    display: none; /* Скрываем по умолчанию */
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 80%; /* Ширина контейнера */
+    max-width: 600px; /* Максимальная ширина */
+}
+
+.recipe-detail-container h2 {
+    color: rgb(50, 98, 255);
+    font-style: italic;
+    font-size: 40px;
+}
+
+.recipe-detail-container button {
+    margin-top: 20px;
+    color: black;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#ingredient-input::placeholder {
+    color: white;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    background: rgba(0,0,0,0.7);
+    color: white;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+.bg_image_0{
+    background: url(../img/0.jpg) center no-repeat;
+
+}
+
+.bg_image_1{
+    background: url(../img/1.jpg) center no-repeat;
+}
+
+.bg_image_2{
+    background: url(../img/2.jpg) center no-repeat;
+}
+
+.bg_image_3{
+    background: url(../img/3.jpg) center no-repeat;
+}
+
+.bg_image_4{
+    background: url(../img/4.jpg) center no-repeat;
+    background-size: covers;
+}
+
+.bg_image_5{
+    background: url(../img/5.jpg) center no-repeat;
+}
+
+.bg_image_6{
+    background: url(../img/6.jpg) center no-repeat;
+}
+
+.bg_image_7{
+    background: url(../img/7.jpg) center no-repeat;
+}
+
+.bg_image_8{
+    background: url(../img/8.jpg) center no-repeat;
+}
+
+.bg_image_9{
+    background: url(../img/9.jpg) center no-repeat;
+}
+
+.bg_image_10{
+    background: url(../img/10.jpg) center no-repeat;
+}
+
+.bg_image_11{
+    background: url(../img/11.jpg) center no-repeat;
+}
+
+.bg_image_12{
+    background: url(../img/12.jpg) center no-repeat;
+}
+
+.bg_image_13{
+    background: url(../img/13.jpg) center no-repeat;
+}
+
+.bg_image_14{
+    background: url(../img/14.jpg) center no-repeat;
+}
